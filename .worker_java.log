@@ -1,0 +1,1 @@
+[worker:java] blocked signals=[] ignored=['SIGPIPE', 'SIGXFSZ'] OMP_NUM_THREADS=1 KMP_DUPLICATE_LIB_OK=TRUE
