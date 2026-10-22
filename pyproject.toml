@@ -5,18 +5,19 @@ description = "Sparse, dense and hybrid (RRF) passage retrieval on MS MARCO with
 # Pyserini >= 2.x (current release line) requires Python 3.12 and Java 21.
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "pyserini>=2.4,<3",       # Lucene BM25 + FAISS dense search (needs a JDK 21 on PATH)
-    "faiss-cpu>=1.9",         # swap for faiss-gpu if you have a CUDA build you trust
+    "pyserini>=2.4,<3", # Lucene BM25 + FAISS dense search (needs a JDK 21 on PATH)
+    "faiss-cpu>=1.9", # swap for faiss-gpu if you have a CUDA build you trust
     "numpy>=2",
     "pandas>=2.2",
-    "pyarrow>=17",            # multithreaded TSV/parquet IO
+    "pyarrow>=17", # multithreaded TSV/parquet IO
     "scipy>=1.13",
-    "scikit-learn>=1.5",      # CountVectorizer tokenisation for TF-IDF
-    "pystemmer>=2.2",         # C Porter stemmer (same algorithm as Lucene's PorterStemFilter)
-    "sparse-dot-topn>=1.1",   # multithreaded C++ sparse matmul with fused top-k
+    "scikit-learn>=1.5", # CountVectorizer tokenisation for TF-IDF
+    "pystemmer>=2.2", # C Porter stemmer (same algorithm as Lucene's PorterStemFilter)
+    "sparse-dot-topn>=1.1", # multithreaded C++ sparse matmul with fused top-k
     "matplotlib>=3.8",
     "tqdm",
     # torch / transformers are pulled in by pyserini; pin them yourself if you need a specific CUDA build
+    "streamlit>=1.66.0",
 ]
 
 [project.optional-dependencies]

@@ -1,0 +1,11 @@
+[worker:dense] blocked signals=[] ignored=['SIGPIPE', 'SIGXFSZ'] OMP_NUM_THREADS=1 KMP_DUPLICATE_LIB_OK=None
+10:56:38 | INFO    | Loading faiss.
+10:56:38 | INFO    | Successfully loaded faiss.
+W1020 10:56:43.588000 97891 .venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+10:56:44 | INFO    | st: load FAISS index: 0.1s
+10:56:45 | INFO    | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+10:56:45 | INFO    | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+10:56:45 | INFO    | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+10:56:46 | INFO    | HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 6557.58it/s]
+10:56:46 | INFO    | st query encoder: sentence-transformers/all-MiniLM-L6-v2 on cpu (fp32)

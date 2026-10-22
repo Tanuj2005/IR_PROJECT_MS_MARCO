@@ -1,0 +1,2 @@
+[worker:tfidf] blocked signals=[] ignored=['SIGPIPE', 'SIGXFSZ'] OMP_NUM_THREADS=1 KMP_DUPLICATE_LIB_OK=TRUE
+10:55:32 | INFO    | tfidf: load index: 0.0s
